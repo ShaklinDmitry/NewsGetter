@@ -1,0 +1,360 @@
+array(2) {
+  ["@attributes"]=>
+  array(1) {
+    ["version"]=>
+    string(3) "2.0"
+  }
+  ["channel"]=>
+  array(6) {
+    ["title"]=>
+    string(45) "В мире — Рамблер/новости"
+    ["link"]=>
+    string(23) "https://news.rambler.ru"
+    ["description"]=>
+    string(149) "Все последние новости мира сегодня, аналитика событий в мире, мировые новости дня"
+    ["language"]=>
+    string(2) "ru"
+    ["image"]=>
+    array(3) {
+      ["url"]=>
+      string(45) "/static/news/i/favicon-news/favicon-96x96.png"
+      ["title"]=>
+      string(29) "Рамблер/новости"
+      ["link"]=>
+      string(23) "https://news.rambler.ru"
+    }
+    ["item"]=>
+    array(10) {
+      [0]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772869"
+        ["title"]=>
+        string(114) "Зеленский потребовал от Запада гарантий ядерной безопасности"
+        ["link"]=>
+        string(101) "https://news.rambler.ru/world/52772869-zelenskiy-potreboval-ot-zapada-garantiy-yadernoy-bezopasnosti/"
+        ["pdalink"]=>
+        string(101) "https://news.rambler.ru/world/52772869-zelenskiy-potreboval-ot-zapada-garantiy-yadernoy-bezopasnosti/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 12:38:51 +0300"
+        ["description"]=>
+        string(402) "Украина хочет получить на международном саммите в Швейцарии гарантии энергетической, в том числе ядерной, безопасности от Запада, заявил Владимир Зеленский. Российская газета «Мы хотим в результате получить коммюнике."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "600"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/c9b6c5d409fd8957b2b425f13369aa2f"
+            ["width"]=>
+            string(4) "1067"
+          }
+        }
+        ["author"]=>
+        string(14) "Рамблер"
+      }
+      [1]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772579"
+        ["title"]=>
+        string(144) "Зеленский прокомментировал идею Макрона ввести иностранные войска на Украину"
+        ["link"]=>
+        string(117) "https://news.rambler.ru/world/52772579-zelenskiy-prokommentiroval-ideyu-makrona-vvesti-inostrannye-voyska-na-ukrainu/"
+        ["pdalink"]=>
+        string(117) "https://news.rambler.ru/world/52772579-zelenskiy-prokommentiroval-ideyu-makrona-vvesti-inostrannye-voyska-na-ukrainu/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 12:36:24 +0300"
+        ["description"]=>
+        string(308) "Президент Украины Владимир Зеленский поддержал идею своего французского коллеги Эммануэля Макрона ввести войска на территорию страны. Об этом сообщает «РБК Украина»."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "800"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/1dbb7f69c114e3aa1958bc1377bc2629"
+            ["width"]=>
+            string(4) "1200"
+          }
+        }
+        ["author"]=>
+        string(8) "Lenta.ru"
+      }
+      [2]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772346"
+        ["title"]=>
+        string(97) "Назван главный враг принца Гарри в королевской семье"
+        ["link"]=>
+        string(92) "https://news.rambler.ru/world/52772346-nazvan-glavnyy-vrag-printsa-garri-v-korolevskoy-seme/"
+        ["pdalink"]=>
+        string(92) "https://news.rambler.ru/world/52772346-nazvan-glavnyy-vrag-printsa-garri-v-korolevskoy-seme/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 12:21:12 +0300"
+        ["description"]=>
+        string(274) "Один из бывших сотрудников дворца назвал главное препятствие для возвращения принца Гарри в британскую королевскую семью. Об этом сообщает Daily Telegraph."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "800"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/6ae4c32a17f39a751973d222dec53898"
+            ["width"]=>
+            string(4) "1200"
+          }
+        }
+        ["author"]=>
+        string(8) "Lenta.ru"
+      }
+      [3]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772669"
+        ["title"]=>
+        string(94) "Зеленский оценил предложение о перемирии с Россией"
+        ["link"]=>
+        string(92) "https://news.rambler.ru/world/52772669-zelenskiy-otsenil-predlozhenie-o-peremirii-s-rossiey/"
+        ["pdalink"]=>
+        string(92) "https://news.rambler.ru/world/52772669-zelenskiy-otsenil-predlozhenie-o-peremirii-s-rossiey/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 12:20:47 +0300"
+        ["description"]=>
+        string(233) "Президент Украины Владимир Зеленский выразил сомнения об «Олимпийском перемирии» с Россией. Он назвал это «неживой историей»."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "420"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/a0453445ac7cf5c8bfcecc5ede0b4b82"
+            ["width"]=>
+            string(3) "630"
+          }
+        }
+        ["author"]=>
+        string(6) "Ura.Ru"
+      }
+      [4]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772581"
+        ["title"]=>
+        string(139) "МИД Литвы вызвал дипломата РФ из-за объявления в розыск литовских политиков"
+        ["link"]=>
+        string(116) "https://news.rambler.ru/world/52772581-mid-litvy-vyzval-diplomata-rf-iz-za-obyavleniya-v-rozysk-litovskih-politikov/"
+        ["pdalink"]=>
+        string(116) "https://news.rambler.ru/world/52772581-mid-litvy-vyzval-diplomata-rf-iz-za-obyavleniya-v-rozysk-litovskih-politikov/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 12:04:14 +0300"
+        ["description"]=>
+        string(236) "МИД Литвы вызвал представителя посольства России и выразил ему протест из-за объявления в розыск некоторых литовских политиков."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "600"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/ba6fc918bb8c7a2a39b7dac65dc5a9c7"
+            ["width"]=>
+            string(4) "1067"
+          }
+        }
+        ["author"]=>
+        string(14) "Рамблер"
+      }
+      [5]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772547"
+        ["title"]=>
+        string(110) "Венгрия наложила вето на резолюцию Совета Европы по Украине"
+        ["link"]=>
+        string(104) "https://news.rambler.ru/world/52772547-vengriya-nalozhila-veto-na-rezolyutsiyu-soveta-evropy-po-ukraine/"
+        ["pdalink"]=>
+        string(104) "https://news.rambler.ru/world/52772547-vengriya-nalozhila-veto-na-rezolyutsiyu-soveta-evropy-po-ukraine/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 11:56:59 +0300"
+        ["description"]=>
+        string(287) "Венгрия наложила вето на резолюцию Совета Европы по Украине. Об этом сообщил министр иностранных дел и внешнеэкономических связей Венгрии Петер Сийярто. NSN."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "600"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/47bc221102aaca2db57cd55992f54fdc"
+            ["width"]=>
+            string(4) "1066"
+          }
+        }
+        ["author"]=>
+        string(14) "Рамблер"
+      }
+      [6]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772515"
+        ["title"]=>
+        string(118) "Правый нидерландский политик Вилдерс призвал страну выйти из ЕС"
+        ["link"]=>
+        string(103) "https://news.rambler.ru/world/52772515-pravyy-niderlandskiy-politik-vilders-prizval-stranu-vyyti-iz-es/"
+        ["pdalink"]=>
+        string(103) "https://news.rambler.ru/world/52772515-pravyy-niderlandskiy-politik-vilders-prizval-stranu-vyyti-iz-es/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 11:55:48 +0300"
+        ["description"]=>
+        string(319) "Глава победившей на выборах в Нидерландах правой партии «Партия свободы» (PVV) заявил о необходимости для государства выхода из Евросоюза. Об этом сообщает немецкая газета Bild."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "600"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/99a99997780d718e6fadaadd81efea10"
+            ["width"]=>
+            string(4) "1067"
+          }
+        }
+        ["author"]=>
+        string(15) "Газета.Ru"
+      }
+      [7]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52771875"
+        ["title"]=>
+        string(129) "«Формула ядерной войны»: Медведчук расшифровал инициативу Зеленского"
+        ["link"]=>
+        string(109) "https://news.rambler.ru/world/52771875-formula-yadernoy-voyny-medvedchuk-rasshifroval-initsiativu-zelenskogo/"
+        ["pdalink"]=>
+        string(109) "https://news.rambler.ru/world/52771875-formula-yadernoy-voyny-medvedchuk-rasshifroval-initsiativu-zelenskogo/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 11:42:16 +0300"
+        ["description"]=>
+        string(431) "«Формула мира» президента Украины Владимира Зеленского является ничем иным как «формулой ядерной войны», заявил глава движения «Другая Украина», бывший лидер запрещенной в стране партии «Оппозиционная платформа — За жизнь» Виктор…"
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "723"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/1cefd701afad93fa59fddcedac929dd9"
+            ["width"]=>
+            string(4) "1024"
+          }
+        }
+        ["author"]=>
+        string(7) "News.ru"
+      }
+      [8]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52771893"
+        ["title"]=>
+        string(137) "Врач сделал заявление о новых операциях премьера Словакии после покушения"
+        ["link"]=>
+        string(118) "https://news.rambler.ru/world/52771893-vrach-sdelal-zayavlenie-o-novyh-operatsiyah-premera-slovakii-posle-pokusheniya/"
+        ["pdalink"]=>
+        string(118) "https://news.rambler.ru/world/52771893-vrach-sdelal-zayavlenie-o-novyh-operatsiyah-premera-slovakii-posle-pokusheniya/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 10:37:00 +0300"
+        ["description"]=>
+        string(324) "Новых медицинских операций у премьер-министра Словакии Роберта Фицо не будет. Об этом заявила главный врач больницы имени Рузвельта в городе Банска-Бистрица Мириам Лапуникова."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(3) "594"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/a3bf9b6b69bc5ff7dd287a1682b538f7"
+            ["width"]=>
+            string(4) "1056"
+          }
+        }
+        ["author"]=>
+        string(6) "Ura.Ru"
+      }
+      [9]=>
+      array(9) {
+        ["guid"]=>
+        string(8) "52772245"
+        ["title"]=>
+        string(105) "Боррель заявил об угрозе Китая для европейской экономики"
+        ["link"]=>
+        string(98) "https://news.rambler.ru/world/52772245-borrel-zayavil-ob-ugroze-kitaya-dlya-evropeyskoy-ekonomiki/"
+        ["pdalink"]=>
+        string(98) "https://news.rambler.ru/world/52772245-borrel-zayavil-ob-ugroze-kitaya-dlya-evropeyskoy-ekonomiki/"
+        ["pubDate"]=>
+        string(31) "Fri, 17 May 2024 11:17:08 +0300"
+        ["description"]=>
+        string(398) "Глава европейской дипломатии Жозеп Боррель заявил, что экономика ЕС находится под угрозой из-за дисбаланса в экономике Китая и стремления КНР заполнить мировые рынки своими электромобилями. Об этом сообщает Foreign Policy."
+        ["category"]=>
+        string(11) "В мире"
+        ["enclosure"]=>
+        array(1) {
+          ["@attributes"]=>
+          array(4) {
+            ["description"]=>
+            string(0) ""
+            ["height"]=>
+            string(4) "1080"
+            ["url"]=>
+            string(66) "https://news.store.rambler.ru/img/7a5160d050105850ae0da63270d8d3a4"
+            ["width"]=>
+            string(4) "1920"
+          }
+        }
+        ["author"]=>
+        string(14) "Рамблер"
+      }
+    }
+  }
+}
