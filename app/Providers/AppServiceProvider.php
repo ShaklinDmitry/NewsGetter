@@ -3,10 +3,12 @@
 namespace App\Providers;
 
 
+use App\Modules\NewsGetter\Domain\NewsRepositoryInterface;
 use App\Modules\NewsGetter\Infrastructure\Downloader\NewsDownloader;
 use App\Modules\NewsGetter\Infrastructure\Downloader\NewsDownloaderInterface;
 use App\Modules\NewsGetter\Infrastructure\NewsParser\NewsParser;
 use App\Modules\NewsGetter\Infrastructure\NewsParser\NewsParserInterface;
+use App\Modules\NewsGetter\Infrastructure\Repositories\NewsRepository;
 use App\Modules\NewsGetter\Infrastructure\Service\NewsDownloadService;
 use App\Modules\NewsGetter\Infrastructure\Service\NewsDownloadServiceInterface;
 use Illuminate\Support\ServiceProvider;
@@ -29,6 +31,10 @@ class AppServiceProvider extends ServiceProvider
 
         $this->app->bind(NewsDownloadServiceInterface::class, function (){
             return new NewsDownloadService(app(NewsDownloaderInterface::class), app(NewsParserInterface::class));
+        });
+
+        $this->app->bind(NewsRepositoryInterface::class, function (){
+            return new NewsRepository();
         });
     }
 

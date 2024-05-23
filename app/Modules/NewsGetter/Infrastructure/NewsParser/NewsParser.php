@@ -9,9 +9,9 @@ class NewsParser implements NewsParserInterface
 
     /**
      * @param string $news
-     * @return array
+     * @return NewsDTO[]
      */
-    public function parse(string $news): array
+    public function parse(string $news, string $newsType): array
     {
         $xml = simplexml_load_string($news);
 
@@ -26,7 +26,7 @@ class NewsParser implements NewsParserInterface
             $item = $xmlConvertedToArray['channel']['item'];
             $item[$i]['description'] = preg_replace('/\xc2\xa0/', ' ', $item[$i]['description']);
 
-            $newsCollection[] = new NewsDTO($item[$i]['description'], $item[$i]['link'], $item[$i]['pubDate']);
+            $newsCollection[] = new NewsDTO($item[$i]['description'], $newsType, $item[$i]['link'], $item[$i]['pubDate']);
         }
 
         return $newsCollection;
