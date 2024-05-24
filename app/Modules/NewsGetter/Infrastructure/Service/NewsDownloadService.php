@@ -29,7 +29,7 @@ class NewsDownloadService implements NewsDownloadServiceInterface
     /**
      * @return void
      */
-    public function download()
+    public function download(): void
     {
         foreach (self::LINKS as $link){
             $newsBody = $this->newsDownloader->download($link['link']);

@@ -20,10 +20,10 @@ class NewsService implements NewsServiceInterface
     }
 
     /**
-     * @param NewsDTO[] $newsCollection
-     * @return mixed|void
+     * @param array $newsCollection
+     * @return void
      */
-    public function saveNews(array $newsCollection)
+    public function saveNews(array $newsCollection): void
     {
         foreach ($newsCollection as $news){
             $news = News::create(Description::fromString($news->description), NewsType::fromString($news->newsType),
@@ -31,7 +31,6 @@ class NewsService implements NewsServiceInterface
 
             $this->newsRepository->saveNews($news);
         }
-
 
     }
 }
