@@ -2,6 +2,7 @@
 
 namespace App\Modules\NewsGetter\Application\Services;
 
+use App\Events\NewsSavedEvent;
 use App\Modules\NewsGetter\Domain\News;
 use App\Modules\NewsGetter\Domain\NewsRepositoryInterface;
 use App\Modules\NewsGetter\Domain\ValueObjects\Description;
@@ -20,17 +21,24 @@ class NewsService implements NewsServiceInterface
     }
 
     /**
-     * @param array $newsCollection
+     * @param NewsDTO[] $newsCollection
      * @return void
      */
     public function saveNews(array $newsCollection): void
     {
-        foreach ($newsCollection as $news){
+
+        $newsFormatted = [];
+
+        foreach ($newsCollection as $news)
+        {
             $news = News::create(Description::fromString($news->description), NewsType::fromString($news->newsType),
-                                Link::fromString($news->link), Pubdate::fromString($news->pubDate));
+                Link::fromString($news->link), Pubdate::fromString($news->pubDate));
+
+            $newsFormatted[]  = $news->asArray();
 
             $this->newsRepository->saveNews($news);
         }
 
+        NewsSavedEvent::dispatch($newsFormatted);
     }
 }

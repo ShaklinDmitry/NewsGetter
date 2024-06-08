@@ -26,7 +26,9 @@ class NewsParser implements NewsParserInterface
             $item = $xmlConvertedToArray['channel']['item'];
             $item[$i]['description'] = preg_replace('/\xc2\xa0/', ' ', $item[$i]['description']);
 
-            $newsCollection[] = new NewsDTO($item[$i]['description'], $newsType, $item[$i]['link'], $item[$i]['pubDate']);
+            $formattedPubDate = new \DateTime($item[$i]['pubDate']);
+
+            $newsCollection[] = new NewsDTO($item[$i]['description'], $newsType, $item[$i]['link'], $formattedPubDate);
         }
 
         return $newsCollection;

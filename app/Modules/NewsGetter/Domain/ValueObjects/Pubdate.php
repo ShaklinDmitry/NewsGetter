@@ -16,11 +16,9 @@ class Pubdate
      * @param string $dateTime
      * @return Pubdate
      */
-    public static function fromString(string $dateTime): Pubdate
+    public static function fromString(\DateTime $dateTime): Pubdate
     {
-        $formattedPubDate = new \DateTime($dateTime);
-
-        return new self($formattedPubDate);
+        return new self($dateTime);
     }
 
 

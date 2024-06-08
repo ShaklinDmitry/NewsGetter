@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Events\NewsDownloadedEvent;
+use App\Events\NewsSavedEvent;
 use App\Listeners\SaveNewsListener;
+use App\Listeners\SendNewsToBrokerListener;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -22,7 +24,11 @@ class EventServiceProvider extends ServiceProvider
         ],
 
         NewsDownloadedEvent::class => [
-            SaveNewsListener::class
+            SaveNewsListener::class,
+        ],
+
+        NewsSavedEvent::class => [
+            SendNewsToBrokerListener::class
         ]
     ];
 

@@ -4,6 +4,8 @@ namespace App\Modules\NewsGetter\Infrastructure\Repositories;
 
 use App\Modules\NewsGetter\Domain\News;
 use App\Modules\NewsGetter\Domain\NewsRepositoryInterface;
+use DateInterval;
+use Illuminate\Support\Facades\DB;
 
 class NewsRepository implements NewsRepositoryInterface
 {
@@ -21,5 +23,23 @@ class NewsRepository implements NewsRepositoryInterface
         ]);
 
         return $news->toArray();
+    }
+
+
+    /**
+     * @param string $link
+     * @param \DateTime $pubDate
+     * @param string $checkHours
+     * @return bool
+     * @throws \Exception
+     */
+    public function checkNewsAlreadyExists(string $link, \DateTime $pubDate, string $checkHours): bool
+    {
+        $checkDuplicateTimeInterval = \Carbon\Carbon::parse($pubDate)->subHours($checkHours);
+
+        $isNewsExist = \App\Models\News::query()->where('link', $link)->whereBetween('pub_date', [$checkDuplicateTimeInterval, $pubDate])->exists();
+
+        return $isNewsExist;
+
     }
 }

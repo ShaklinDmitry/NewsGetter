@@ -5,5 +5,8 @@ namespace App\Modules\NewsGetter\Infrastructure\Service;
 interface NewsDownloadServiceInterface
 {
 
-    public function download();
+    /**
+     * @return void
+     */
+    public function download(): void;
 }

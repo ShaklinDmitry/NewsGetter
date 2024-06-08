@@ -6,8 +6,12 @@ namespace App\Providers;
 use App\Modules\NewsGetter\Application\Services\NewsService;
 use App\Modules\NewsGetter\Application\Services\NewsServiceInterface;
 use App\Modules\NewsGetter\Domain\NewsRepositoryInterface;
+use App\Modules\NewsGetter\Infrastructure\Bus\Bus;
+use App\Modules\NewsGetter\Infrastructure\Bus\BusInterface;
 use App\Modules\NewsGetter\Infrastructure\Downloader\NewsDownloader;
 use App\Modules\NewsGetter\Infrastructure\Downloader\NewsDownloaderInterface;
+use App\Modules\NewsGetter\Infrastructure\NewsDuplicateEraser\NewsDuplicateEraser;
+use App\Modules\NewsGetter\Infrastructure\NewsDuplicateEraser\NewsDuplicateEraserInterface;
 use App\Modules\NewsGetter\Infrastructure\NewsParser\NewsParser;
 use App\Modules\NewsGetter\Infrastructure\NewsParser\NewsParserInterface;
 use App\Modules\NewsGetter\Infrastructure\Repositories\NewsRepository;
@@ -32,9 +36,6 @@ class AppServiceProvider extends ServiceProvider
             return new NewsParser();
         });
 
-        $this->app->bind(NewsDownloadServiceInterface::class, function (){
-            return new NewsDownloadService(app(NewsDownloaderInterface::class), app(NewsParserInterface::class));
-        });
 
         $this->app->bind(NewsRepositoryInterface::class, function (){
             return new NewsRepository();
@@ -42,6 +43,20 @@ class AppServiceProvider extends ServiceProvider
 
         $this->app->bind(NewsServiceInterface::class, function(){
             return new NewsService(app(NewsRepositoryInterface::class));
+        });
+
+        $this->app->bind(BusInterface::class, function (){
+            return new Bus();
+        });
+
+        $this->app->bind(NewsDuplicateEraserInterface::class, function (){
+            return new NewsDuplicateEraser(app(NewsRepositoryInterface::class));
+        });
+
+
+        $this->app->bind(NewsDownloadServiceInterface::class, function (){
+            return new NewsDownloadService(app(NewsDownloaderInterface::class), app(NewsParserInterface::class),
+                                            app(NewsRepositoryInterface::class), app(NewsDuplicateEraserInterface::class));
         });
     }
 

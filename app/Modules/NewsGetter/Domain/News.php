@@ -16,7 +16,7 @@ class News
      * @param Link $link
      * @param Pubdate $pubdate
      */
-    public function __construct(public readonly Description $description, public readonly NewsType $newsType, public readonly Link $link, public readonly Pubdate $pubdate)
+    private function __construct(public readonly Description $description, public readonly NewsType $newsType, public readonly Link $link, public readonly Pubdate $pubdate)
     {
     }
 
@@ -30,6 +30,18 @@ class News
     public static function create(Description $description, NewsType $newsType, Link $link, Pubdate $pubdate): News
     {
         return new self($description, $newsType, $link, $pubdate);
+    }
+
+    /**
+     * @return array
+     */
+    public function asArray(){
+        return [
+            'description' => $this->description->text,
+            'newsType' => $this->newsType->name,
+            'link' => $this->link->string,
+            'pubDate' => $this->pubdate->dateTime->format('Y-m-d H:i:s')
+        ];
     }
 
 
